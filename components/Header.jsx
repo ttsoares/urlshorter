@@ -10,25 +10,29 @@ export const MENU_LIST = [
 
 const Header = () => {
   return (
-    <div className="w-full h-24 flex items-center justify-between border-2 border-blue-500">
+    <div className="hidden lg:flex w-full h-24 items-center justify-between">
       {/* left */}
       <div className="flex items-center justify-start">
         <div className="hidden md:block p-3 md:ml-5 w-24 h-12 mr-14">
           <Image src="/logo.svg" alt="logo" width={120} height={75} />
         </div>
-
         {MENU_LIST.map((item, index) => (
           <div className="flex justify-center items-center" key={index}>
-            <div className=" text-grayishViolet hover:text-veryDarkViolet font-bold mx-5">
+            <div className=" text-grayishViolet hover:text-veryDarkViolet font-bold mx-5 py-3">
               <Link href={item.href}>{item.text}</Link>
             </div>
           </div>
         ))}
       </div>
       {/* right */}
-      <div className="w-52 h-12 flex items-center justify-between md:mr-5">
-        <Link href="/login">Login</Link>
-        <div className="w-28 h-9 bg-green-700 hover:bg-green-500 rounded-full flex items-center justify-center text-white">
+      <div className="hidden lg:flex items-center justify-between font-bold md:mr-6 space-x-6">
+        <Link
+          className="text-grayishViolet hover:text-veryDarkViolet py-3"
+          href="/login"
+        >
+          Login
+        </Link>
+        <div className=" text-white bg-cyan hover:bg-cyanLight rounded-full flex items-center justify-center px-8 py-3">
           <Link href="/signup">Sign Up</Link>
         </div>
       </div>

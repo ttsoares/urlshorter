@@ -21,15 +21,15 @@ module.exports = {
         veryDarkBlue: "hsl(255, 11%, 22%)",
         veryDarkViolet: "hsl(260, 8%, 14%) ",
       },
-      backgroundImage: () => ({
+      backgroundImage: {
         boost_dsk: "url('/bg-boost-desktop.svg')",
-        boost_mbl: "url('/bg-boots-mobile.svg')",
-        bg_dsk: "url('/bg-shorten-desktop.svg)",
-        bg_mbl: "url('/bg-shorten-mobile.svg)",
-      }),
+        boost_mbl: "url('/bg-boost-mobile.svg')",
+        bg_dsk: "url('/bg-shorten-desktop.svg')",
+        bg_mbl: "url('/bg-shorten-mobile.svg')",
+      },
 
       spacing: {
-        180: "32rem",
+        170: "31rem",
       },
     },
   },
