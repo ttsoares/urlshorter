@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="container flex lg:flex-row mx-auto p-7 flex-col-reverse">
       {/* texts */}
-      <div className="flex flex-col space-y-11 mb-43 lg:mt-16 lg:w-1/2  border-2 border-orange-600">
+      <div className="flex flex-col space-y-11 mb-43 lg:mt-16 lg:w-1/2 ">
         <h1 className="text-5xl text-center font-bold lg:text-6xl lg:max-w-md lg:text-left">
           More then just shorter links
         </h1>
@@ -23,7 +23,7 @@ const Hero = () => {
         </button>
       </div>
       {/* image */}
-      <div className="mb-24 mx-auto md:w-170 lg:w-1/2 lg:mb-0 border-2 border-green-500">
+      <div className="mb-24 mx-auto md:w-170 lg:w-1/2 lg:mb-0 ">
         <Image
           src="/illustration-working.svg"
           alt="man working"
