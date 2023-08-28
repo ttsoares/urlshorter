@@ -15,10 +15,10 @@ const Header = () => {
   const [burger, setBurger] = useState(false);
 
   return (
-    <section className="flex items-center justify-between w-[95%] relative">
-      <div className="p-3 md:ml-5 w-24 h-12 mr-14">
+    <section className="container w-[90%] lg:w-[80%] flex items-center justify-between  mx-auto mt-5 lg:mb-7 relative">
+      <div className="p-3 md:ml-3 mr-10 w-44">
         <Link href="/">
-          <Image src="/logo.svg" alt="logo" width={120} height={75} />
+          <Image src="/logo.svg" alt="logo" width={500} height={220} />
         </Link>
       </div>
 
@@ -30,7 +30,7 @@ const Header = () => {
           viewBox="0 0 24 24"
           strokeWidth="2.0"
           stroke="currentColor"
-          class="w-8 h-8 fill-current text-black"
+          className="w-8 h-8 fill-current text-black"
         >
           <path
             strokeLinecap="round"
@@ -42,21 +42,21 @@ const Header = () => {
       {burger && (
         <div
           onClick={() => setBurger(!burger)}
-          className="flex flex-col absolute w-[95%] h-[300px] top-14 left-5 right-5 rounded-lg bg-darkViolet"
+          className="flex flex-col absolute w-[102%] h-[380px] top-14 -left-1 rounded-lg bg-darkViolet z-10"
         >
           {MENU_LIST.map((item, index) => (
             <div
               className="flex flex-col justify-center items-center"
               key={index}
             >
-              <div className=" text-grayishViolet hover:text-veryDarkViolet font-bold mx-5 py-3">
+              <div className=" text-grayishViolet hover:text-veryDarkViolet font-bold mx-5 py-5">
                 <Link href={item.href}>{item.text}</Link>
               </div>
             </div>
           ))}
-          <div className="w-[90%] h-1 mx-auto border-b-2 border-slate-500"></div>
+          <div className="w-[90%] h-3 py-3 mt-3 mx-auto border-t-2 border-slate-500"></div>
           <Link
-            className="text-grayishViolet hover:text-veryDarkViolet py-3 text-center"
+            className="text-grayishViolet hover:text-veryDarkViolet py-3 mb-4 text-center"
             href="/login"
           >
             Login
@@ -82,12 +82,12 @@ const Header = () => {
         {/* right */}
         <div className="hidden lg:flex items-center justify-between font-bold md:mr-6 space-x-6">
           <Link
-            className="text-grayishViolet hover:text-veryDarkViolet py-3"
+            className="text-grayishViolet hover:text-veryDarkViolet py-3 mr-4"
             href="/login"
           >
             Login
           </Link>
-          <div className=" text-white bg-cyan hover:bg-cyanLight rounded-full flex items-center justify-center px-8 py-3">
+          <div className=" text-white bg-cyan hover:bg-cyanLight rounded-full flex items-center justify-center px-7 py-2">
             <Link href="/signup">Sign Up</Link>
           </div>
         </div>
