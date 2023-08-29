@@ -3,13 +3,15 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-20 bg-veryDarkViolet mx-auto ">
+    <footer className="w-full py-[60px] bg-veryDarkViolet mx-auto ">
       <div className="w-[90%] lg:w-[80%] flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
-        <Link href="/">
-          <Logo fill="white" stroke="" />
-        </Link>
+        <div className="ml-8">
+          <Link href="/">
+            <Logo fill="white" stroke="" />
+          </Link>
+        </div>
 
-        <div className="w-[50%] flex flex-col space-y-16 md:space-x-12 md:flex-row md:space-y-0">
+        <div className="w-[50%] flex flex-col space-y-16 md:space-x-10 md:flex-row md:space-y-0 lg:ml-60">
           <div className="flex flex-col items-center w-full md:items-start">
             <div className="mb-5 font-bold text-white capitalize">Features</div>
             <div className="flex flex-col items-center space-y-3 md:items-start">
@@ -91,7 +93,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className=" flex space-x-6">
+        <div className=" flex space-x-6 pr-4">
           <a href="https://www.facebook.com/frontendmentor">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
               <path

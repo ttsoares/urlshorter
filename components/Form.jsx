@@ -57,17 +57,17 @@ const Form = () => {
   }
 
   return (
-    <section className="container w-full mx-auto flex flex-col justify-center  bg-[#F1F4F9] relative mt-10 md:mt-44 ">
+    <section className="container w-full mx-auto flex flex-col justify-center  relative mt-10 lg:-mt-48">
       <div className="w-[85%] lg:w-[80%] mx-auto lg:p-6 space-y-6">
         <div className="bg-veryDarkViolet rounded-lg">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="relative flex flex-col w-full p-5 lg:p-12 lg:-mt-16 space-y-4 bg-bg_mbl lg:bg-bg_dsk bg-cover bg-no-repeat rounded-xl lg:flex-row lg:space-y-0 lg:space-x-3 "
+            className="relative flex flex-col w-full p-5 lg:p-12  space-y-4 bg-bg_mbl lg:bg-bg_dsk bg-cover bg-no-repeat rounded-xl lg:flex-row lg:space-y-0 lg:space-x-3 "
           >
             <input
               type="url"
               {...register("url", { required: true })}
-              className={`flex-1 py-4 text-lg border-2 rounded-lg placeholder-red focus:outline-none ${
+              className={`flex-1 py-4 text-lg  rounded-lg placeholder-red focus:outline-none ${
                 errors.url ? "border-4 border-orange-700" : ""
               }`}
               placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shorten a link here"
@@ -80,7 +80,7 @@ const Form = () => {
               Shorten It!
             </button>
             {errors.url && (
-              <span className="absolute top-[70px] left-6 md:top-20 md:left -8 lg:top-28 lg:left-10 font-bold text-red">
+              <span className="absolute top-[70px] left-6 md:top-20 md:left -8 lg:top-32 lg:left-10 font-bold text-red">
                 Please, add a link.
               </span>
             )}
@@ -89,7 +89,7 @@ const Form = () => {
       </div>
 
       {/* links */}
-      <div className="mx-auto w-[85%] lg:w-[80%] flex flex-col items-center justify-between bg-gray-500 rounded-lg ">
+      <div className="mx-auto w-[85%] lg:w-[77%] flex flex-col items-center justify-between bg-gray-500 rounded-lg ">
         {urls?.map((url, index) => (
           <div
             key={index}

@@ -5,7 +5,7 @@ import Call2Act from "@/components/Call2Act";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full h-fit">
+    <main className="flex flex-col w-full ">
       <Hero />
       <Form />
       <Features />
