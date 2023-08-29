@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 const Call2Act = () => {
   return (
@@ -8,9 +8,11 @@ const Call2Act = () => {
           <h5 className="mx-auto space-y-10 text-3xl py-10 lg:mb-2 lg:py-0 lg:text-4xl font-bold text-center text-white">
             Boost your links today
           </h5>
-          <button className="px-14 py-4 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLlight md:text-lg focus:outline-none">
-            Get Started
-          </button>
+          <Link href="/getstarted">
+            <div className="px-10 py-4 w-52 mx-auto text-center text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLight md:text-lg focus:outline-none">
+              Get Started
+            </div>
+          </Link>
         </div>
       </div>
     </section>

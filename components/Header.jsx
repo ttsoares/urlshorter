@@ -74,7 +74,7 @@ const Header = () => {
           <div className="flex items-center justify-start">
             {MENU_LIST.map((item, index) => (
               <div className="flex justify-center items-center" key={index}>
-                <div className=" text-grayishViolet hover:text-veryDarkViolet font-bold mx-2 py-3">
+                <div className=" text-grayishViolet hover:text-veryDarkViolet font-bold mx-4 py-3">
                   <Link href={item.href}>{item.text}</Link>
                 </div>
               </div>
